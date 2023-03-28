@@ -10,31 +10,37 @@
       type="text/javascript"
       src="https://static.sketchfab.com/api/sketchfab-viewer-1.12.1.js"
     ></script>
+    <link rel="stylesheet" href="styles.css" />
   </head>
+  <!-- Initialize the viewer -->
+  <script type="text/javascript">
+    var iframe = document.getElementsByClassName("sketchfab-embed-wrapper");
+    var uid = "7w7pAfrCfjovwykkEeRFLGw5SXS";
+
+    var client = new Sketchfab(iframe);
+
+    client.init(uid, {
+      success: function onSuccess(api) {
+        api.start();
+        api.addEventListener("viewerready", function () {
+          // API is ready to use
+          // Insert your code here
+          console.log("Viewer is ready");
+        });
+      },
+      error: function onError() {
+        console.log("Viewer error");
+      },
+    });
+  </script>
 
   <body>
-    <style>
-      body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background: linear-gradient(to bottom, black, grey, black);
-      }
-
-      div {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-      }
-    </style>
-
     <!-- Insert an empty iframe with attributes -->
 
     <div class="sketchfab-embed-wrapper">
       <iframe
-        title="MER_static"
+        id="MER-3d"
+        title="Mars Exploration Rover"
         frameborder="0"
         allowfullscreen
         mozallowfullscreen="true"
@@ -44,13 +50,14 @@
         execution-while-out-of-viewport
         execution-while-not-rendered
         web-share
-        src="https://sketchfab.com/models/2d818c749eeb4c1cab7ffa7163d6ee59/embed"
+        src="https://sketchfab.com/models/2d818c749eeb4c1cab7ffa7163d6ee59/embed?autospin=1&autostart=1&camera=0"
       >
       </iframe>
     </div>
     <div class="sketchfab-embed-wrapper">
       <iframe
-        title="ISS_stationary"
+        id="ISS-3d"
+        title="International Space Station"
         frameborder="0"
         allowfullscreen
         mozallowfullscreen="true"
@@ -60,13 +67,14 @@
         execution-while-out-of-viewport
         execution-while-not-rendered
         web-share
-        src="https://sketchfab.com/models/5a20867028824b599ecdbdc89310f71f/embed"
+        src="https://sketchfab.com/models/5a20867028824b599ecdbdc89310f71f/embed?autospin=1&autostart=1&camera=0"
       >
       </iframe>
     </div>
     <div class="sketchfab-embed-wrapper">
       <iframe
-        title="Hubble"
+        id="hubble-3d"
+        title="Hubble Space Telescope"
         frameborder="0"
         allowfullscreen
         mozallowfullscreen="true"
@@ -76,30 +84,9 @@
         execution-while-out-of-viewport
         execution-while-not-rendered
         web-share
-        src="https://sketchfab.com/models/9f5caba03a0e4ec8a64484a0cc54cdaf/embed"
+        src="https://sketchfab.com/models/9f5caba03a0e4ec8a64484a0cc54cdaf/embed?autospin=1&autostart=1&camera=0"
       >
       </iframe>
     </div>
-    <!-- Initialize the viewer -->
-    <script type="text/javascript">
-      var iframe = document.getElementsByClassName("sketchfab-embed-wrapper");
-      var uid = "7w7pAfrCfjovwykkEeRFLGw5SXS";
-
-      var client = new Sketchfab(iframe);
-
-      client.init(uid, {
-        success: function onSuccess(api) {
-          api.start();
-          api.addEventListener("viewerready", function () {
-            // API is ready to use
-            // Insert your code here
-            console.log("Viewer is ready");
-          });
-        },
-        error: function onError() {
-          console.log("Viewer error");
-        },
-      });
-    </script>
   </body>
 </html>

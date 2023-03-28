@@ -1,0 +1,30 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* background: linear-gradient(to bottom, black, grey, black); */
+  background: black
+}
+
+.sketchfab-embed-wrapper {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  margin: 0 5vmin;
+
+}
+
+#hubble-3d,
+#ISS-3d,
+#MER-3d {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
