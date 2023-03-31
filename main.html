@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Sketchfab Viewer API example</title>
+    <title>MCS328 Exhibition</title>
 
     <!-- Insert this script -->
     <script
@@ -11,7 +11,20 @@
       src="https://static.sketchfab.com/api/sketchfab-viewer-1.12.1.js"
     ></script>
     <link rel="stylesheet" href="styles.css" />
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    /> -->
   </head>
+
+  <!-- Bootstrap CDN -->
+  <!-- <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"
+  ></script> -->
   <!-- Initialize the viewer -->
   <script type="text/javascript">
     var iframe = document.getElementsByClassName("sketchfab-embed-wrapper");
@@ -24,7 +37,6 @@
         api.start();
         api.addEventListener("viewerready", function () {
           // API is ready to use
-          // Insert your code here
           console.log("Viewer is ready");
         });
       },
@@ -35,111 +47,293 @@
   </script>
 
   <body>
-    <!-- Insert an empty iframe with attributes -->
-    <!-- <div class=""></div> -->
-    <main class="description">
-      <h2>Exhibit</h2>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum
-        consectetur corrupti officia voluptatum asperiores? Sapiente, tempore
-        doloremque omnis labore dolore voluptatem ea assumenda iure praesentium
-        eveniet a. Est, velit error.
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum
-        consectetur corrupti officia voluptatum asperiores? Sapiente, tempore
-        doloremque omnis labore dolore voluptatem ea assumenda iure praesentium
-        eveniet a. Est, velit error.
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum
-        consectetur corrupti officia voluptatum asperiores? Sapiente, tempore
-        doloremque omnis labore dolore voluptatem ea assumenda iure praesentium
-        eveniet a. Est, velit error.
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum
-        consectetur corrupti officia voluptatum asperiores? Sapiente, tempore
-        doloremque omnis labore dolore voluptatem ea assumenda iure praesentium
-        eveniet a. Est, velit error.
-      </p>
-    </main>
-    <section>
-      <div class="sketchfab-embed-wrapper">
-        <iframe
-          id="ISS-3d"
-          title="International Space Station"
-          frameborder="0"
-          allowfullscreen
-          mozallowfullscreen="true"
-          webkitallowfullscreen="true"
-          allow="autoplay; fullscreen; xr-spatial-tracking"
-          xr-spatial-tracking
-          execution-while-out-of-viewport
-          execution-while-not-rendered
-          web-share
-          src="https://sketchfab.com/models/5a20867028824b599ecdbdc89310f71f/embed?autospin=1&autostart=1&camera=0"
-        >
-        </iframe>
-        <div class="description">
-            <h3>International Space Station</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-                voluptas, quod, quia, voluptate quae voluptates quibusdam
-                necessitatibus voluptatem quos quas quidem. Quisquam, quae. Quisquam
-                voluptas, quod, quia, voluptate quae voluptates quibusdam
-                necessitatibus voluptatem quos quas quidem. Quisquam, quae.
-            </p>
+    <nav>
+        <h1>Title</h1>
+        <ul>
+        <li><a href="/introduction.html"> Introduction</a></li>
+        <li><a href="/curator.html"> Curatorial Strategy</a></li>
+        <li><a href="/references.html"> Works Cited</a></li>
+      </ul>
+    </nav>
+    <div class="gallery">
+      <main class="introduction">
+        <h2>Introduction</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum
+          consectetur corrupti officia voluptatum asperiores? Sapiente, tempore
+          doloremque omnis labore dolore voluptatem ea assumenda iure
+          praesentium eveniet a. Est, velit error. Lorem, ipsum dolor sit amet
+          consectetur adipisicing elit. Earum consectetur corrupti officia
+          voluptatum asperiores? Sapiente, tempore doloremque omnis labore
+          dolore voluptatem ea assumenda iure praesentium eveniet a. Est, velit
+          error. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum
+          consectetur corrupti officia voluptatum asperiores? Sapiente, tempore
+          doloremque omnis labore dolore voluptatem ea assumenda iure
+          praesentium eveniet a. Est, velit error. Lorem, ipsum dolor sit amet
+          consectetur adipisicing elit. Earum consectetur corrupti officia
+          voluptatum asperiores? Sapiente, tempore doloremque omnis labore
+          dolore voluptatem ea assumenda iure praesentium eveniet a. Est, velit
+          error. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum
+          consectetur corrupti officia voluptatum asperiores? Sapiente, tempore
+          doloremque omnis labore dolore voluptatem ea assumenda iure
+          praesentium eveniet a. Est, velit error. Lorem, ipsum dolor sit amet
+          consectetur adipisicing elit. Earum consectetur corrupti officia
+          voluptatum asperiores? Sapiente, tempore doloremque omnis labore
+          dolore voluptatem ea assumenda iure praesentium eveniet a. Est, velit
+          error. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum
+          consectetur corrupti officia voluptatum asperiores? Sapiente, tempore
+          doloremque omnis labore dolore voluptatem ea assumenda iure
+          praesentium eveniet a. Est, velit error. Lorem, ipsum dolor sit amet
+          consectetur adipisicing elit. Earum consectetur corrupti officia
+          voluptatum asperiores? Sapiente, tempore doloremque omnis labore
+          dolore voluptatem ea assumenda iure praesentium eveniet a. Est, velit
+          error. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum
+          consectetur corrupti officia voluptatum asperiores? Sapiente, tempore
+          doloremque omnis labore dolore voluptatem ea assumenda iure
+          praesentium eveniet a. Est, velit error. Lorem, ipsum dolor sit amet
+          consectetur adipisicing elit. Earum consectetur corrupti officia
+          voluptatum asperiores? Sapiente, tempore doloremque omnis labore
+          dolore voluptatem ea assumenda iure praesentium eveniet a. Est, velit
+          error. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum
+          consectetur corrupti officia voluptatum asperiores? Sapiente, tempore
+          doloremque omnis labore dolore voluptatem ea assumenda iure
+          praesentium eveniet a. Est, velit error. Lorem, ipsum dolor sit amet
+          consectetur adipisicing elit. Earum consectetur corrupti officia
+          voluptatum asperiores? Sapiente, tempore doloremque omnis labore
+          dolore voluptatem ea assumenda iure praesentium eveniet a. Est, velit
+          error. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum
+          consectetur corrupti officia voluptatum asperiores? Sapiente, tempore
+          doloremque omnis labore dolore voluptatem ea assumenda iure
+          praesentium eveniet a. Est, velit error. Lorem, ipsum dolor sit amet
+          consectetur adipisicing elit. Earum consectetur corrupti officia
+          voluptatum asperiores? Sapiente, tempore doloremque omnis labore
+          dolore voluptatem ea assumenda iure praesentium eveniet a. Est, velit
+          error. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum
+          consectetur corrupti officia voluptatum asperiores? Sapiente, tempore
+          doloremque omnis labore dolore voluptatem ea assumenda iure
+          praesentium eveniet a. Est, velit error. Lorem, ipsum dolor sit amet
+          consectetur adipisicing elit. Earum consectetur corrupti officia
+          voluptatum asperiores? Sapiente, tempore doloremque omnis labore
+          dolore voluptatem ea assumenda iure praesentium eveniet a. Est, velit
+          error.
+        </p>
+      </main>
+      <section>
+        <div class="sketchfab-embed-wrapper">
+          <div class="sketchfab-contents">
+            <div class="description-viewer">
+              <div class="description">
+                <h3>International Space Station</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Earum consectetur corrupti officia voluptatum asperiores?
+                  Sapiente, tempore doloremque omnis labore dolore voluptatem ea
+                  assumenda iure praesentium eveniet a. Est, velit error. Lorem,
+                  ipsum dolor sit amet consectetur adipisicing elit. Earum
+                  consectetur corrupti officia voluptatum asperiores? Sapiente,
+                  tempore doloremque omnis labore dolore voluptatem ea assumenda
+                  iure praesentium eveniet a. Est, velit error. Lorem, ipsum
+                  dolor sit amet consectetur adipisicing elit. Earum consectetur
+                  corrupti officia voluptatum asperiores? Sapiente, tempore
+                  doloremque omnis labore dolore voluptatem ea assumenda iure
+                  praesentium eveniet a. Est, velit error. Lorem, ipsum dolor
+                  sit amet consectetur adipisicing elit. Earum consectetur
+                  corrupti officia voluptatum asperiores? Sapiente, tempore
+                  doloremque omnis labore dolore voluptatem ea assumenda iure
+                  praesentium eveniet a. Est, velit error. Lorem, ipsum dolor
+                  sit amet consectetur adipisicing elit. Earum consectetur
+                  corrupti officia voluptatum asperiores? Sapiente, tempore
+                  doloremque omnis labore dolore voluptatem ea assumenda iure
+                  praesentium eveniet a. Est, velit error. Lorem, ipsum dolor
+                  sit amet consectetur adipisicing elit. Earum consectetur
+                  corrupti officia voluptatum asperiores? Sapiente, tempore
+                  doloremque omnis labore dolore voluptatem ea assumenda iure
+                  praesentium eveniet a. Est, velit error. Lorem, ipsum dolor
+                  sit amet consectetur adipisicing elit. Earum consectetur
+                  corrupti officia voluptatum asperiores? Sapiente, tempore
+                  doloremque omnis labore dolore voluptatem ea assumenda iure
+                  praesentium eveniet a. Est, velit error. Lorem, ipsum dolor
+                  sit amet consectetur adipisicing elit. Earum consectetur
+                  corrupti officia voluptatum asperiores? Sapiente, tempore
+                  doloremque omnis labore dolore voluptatem ea assumenda iure
+                  praesentium eveniet a. Est, velit error.
+                </p>
+              </div>
+              <img
+                src="/images/jelly-green-surprised-character-in-vr-glasses.png"
+                alt="image"
+              />
+            </div>
+            <div class="sketchfab-table">
+              <iframe
+                id="ISS-3d"
+                title="International Space Station"
+                frameborder="0"
+                allowfullscreen
+                mozallowfullscreen="true"
+                webkitallowfullscreen="true"
+                allow="autoplay; fullscreen; xr-spatial-tracking"
+                xr-spatial-tracking
+                execution-while-out-of-viewport
+                execution-while-not-rendered
+                web-share
+                src="https://sketchfab.com/models/5a20867028824b599ecdbdc89310f71f/embed?autospin=1&autostart=1&camera=0"
+              >
+              </iframe>
+              <img src="./images/bloom-virtual-reality-console.png" alt="" />
+              <img
+                class="table"
+                src="./images/juicy-table.png"
+                alt="display-table"
+              />
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="sketchfab-embed-wrapper">
-        <iframe
-          id="MER-3d"
-          title="Mars Exploration Rover"
-          frameborder="0"
-          allowfullscreen
-          mozallowfullscreen="true"
-          webkitallowfullscreen="true"
-          allow="autoplay; fullscreen; xr-spatial-tracking"
-          xr-spatial-tracking
-          execution-while-out-of-viewport
-          execution-while-not-rendered
-          web-share
-          src="https://sketchfab.com/models/2d818c749eeb4c1cab7ffa7163d6ee59/embed?autospin=1&autostart=1&camera=0"
-        >
-        </iframe>
-        <div class="description">
-            <h3>Mars Exploration Rover</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-                voluptas, quod, quia, voluptate quae voluptates quibusdam
-                necessitatibus voluptatem quos quas quidem. Quisquam, quae. Quisquam
-                voluptas, quod, quia, voluptate quae voluptates quibusdam
-                necessitatibus voluptatem quos quas quidem. Quisquam, quae.
-            </p>
+        <div class="sketchfab-embed-wrapper">
+          <div class="sketchfab-contents">
+            <div class="description-viewer">
+              <div class="description">
+                <h3>Mars Exploration Rover</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Earum consectetur corrupti officia voluptatum asperiores?
+                  Sapiente, tempore doloremque omnis labore dolore voluptatem ea
+                  assumenda iure praesentium eveniet a. Est, velit error. Lorem,
+                  ipsum dolor sit amet consectetur adipisicing elit. Earum
+                  consectetur corrupti officia voluptatum asperiores? Sapiente,
+                  tempore doloremque omnis labore dolore voluptatem ea assumenda
+                  iure praesentium eveniet a. Est, velit error. Lorem, ipsum
+                  dolor sit amet consectetur adipisicing elit. Earum consectetur
+                  corrupti officia voluptatum asperiores? Sapiente, tempore
+                  doloremque omnis labore dolore voluptatem ea assumenda iure
+                  praesentium eveniet a. Est, velit error. Lorem, ipsum dolor
+                  sit amet consectetur adipisicing elit. Earum consectetur
+                  corrupti officia voluptatum asperiores? Sapiente, tempore
+                  doloremque omnis labore dolore voluptatem ea assumenda iure
+                  praesentium eveniet a. Est, velit error. Lorem, ipsum dolor
+                  sit amet consectetur adipisicing elit. Earum consectetur
+                  corrupti officia voluptatum asperiores? Sapiente, tempore
+                  doloremque omnis labore dolore voluptatem ea assumenda iure
+                  praesentium eveniet a. Est, velit error. Lorem, ipsum dolor
+                  sit amet consectetur adipisicing elit. Earum consectetur
+                  corrupti officia voluptatum asperiores? Sapiente, tempore
+                  doloremque omnis labore dolore voluptatem ea assumenda iure
+                  praesentium eveniet a. Est, velit error. Lorem, ipsum dolor
+                  sit amet consectetur adipisicing elit. Earum consectetur
+                  corrupti officia voluptatum asperiores? Sapiente, tempore
+                  doloremque omnis labore dolore voluptatem ea assumenda iure
+                  praesentium eveniet a. Est, velit error. Lorem, ipsum dolor
+                  sit amet consectetur adipisicing elit. Earum consectetur
+                  corrupti officia voluptatum asperiores? Sapiente, tempore
+                  doloremque omnis labore dolore voluptatem ea assumenda iure
+                  praesentium eveniet a. Est, velit error.
+                </p>
+              </div>
+              <img
+                src="/images/jelly-green-surprised-character-in-vr-glasses.png"
+                alt="image"
+              />
+            </div>
+            <div class="sketchfab-table">
+              <iframe
+                id="MER-3d"
+                title="Mars Exploration Rover"
+                frameborder="0"
+                allowfullscreen
+                mozallowfullscreen="true"
+                webkitallowfullscreen="true"
+                allow="autoplay; fullscreen; xr-spatial-tracking"
+                xr-spatial-tracking
+                execution-while-out-of-viewport
+                execution-while-not-rendered
+                web-share
+                src="https://sketchfab.com/models/2d818c749eeb4c1cab7ffa7163d6ee59/embed?autospin=1&autostart=1&camera=0"
+              >
+              </iframe>
+              <img src="./images/bloom-virtual-reality-console.png" alt="" />
+              <img
+                class="table"
+                src="./images/juicy-table.png"
+                alt="display-table"
+              />
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="sketchfab-embed-wrapper">
-        <iframe
-          id="hubble-3d"
-          title="Hubble Space Telescope"
-          frameborder="0"
-          allowfullscreen
-          mozallowfullscreen="true"
-          webkitallowfullscreen="true"
-          allow="autoplay; fullscreen; xr-spatial-tracking"
-          xr-spatial-tracking
-          execution-while-out-of-viewport
-          execution-while-not-rendered
-          web-share
-          src="https://sketchfab.com/models/9f5caba03a0e4ec8a64484a0cc54cdaf/embed?autospin=1&autostart=1&camera=0"
-        >
-        </iframe>
-        <div class="description">
-            <h3>Hubble Space Telescope</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-                voluptas, quod, quia, voluptate quae voluptates quibusdam
-                necessitatibus voluptatem quos quas quidem. Quisquam, quae. Quisquam
-                voluptas, quod, quia, voluptate quae voluptates quibusdam
-                necessitatibus voluptatem quos quas quidem. Quisquam, quae.
-            </p>
+        <div class="sketchfab-embed-wrapper">
+          <div class="sketchfab-contents">
+            <div class="description-viewer">
+              <div class="description">
+                <h3>Hubble Space Telescope</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Earum consectetur corrupti officia voluptatum asperiores?
+                  Sapiente, tempore doloremque omnis labore dolore voluptatem ea
+                  assumenda iure praesentium eveniet a. Est, velit error. Lorem,
+                  ipsum dolor sit amet consectetur adipisicing elit. Earum
+                  consectetur corrupti officia voluptatum asperiores? Sapiente,
+                  tempore doloremque omnis labore dolore voluptatem ea assumenda
+                  iure praesentium eveniet a. Est, velit error. Lorem, ipsum
+                  dolor sit amet consectetur adipisicing elit. Earum consectetur
+                  corrupti officia voluptatum asperiores? Sapiente, tempore
+                  doloremque omnis labore dolore voluptatem ea assumenda iure
+                  praesentium eveniet a. Est, velit error. Lorem, ipsum dolor
+                  sit amet consectetur adipisicing elit. Earum consectetur
+                  corrupti officia voluptatum asperiores? Sapiente, tempore
+                  doloremque omnis labore dolore voluptatem ea assumenda iure
+                  praesentium eveniet a. Est, velit error. Lorem, ipsum dolor
+                  sit amet consectetur adipisicing elit. Earum consectetur
+                  corrupti officia voluptatum asperiores? Sapiente, tempore
+                  doloremque omnis labore dolore voluptatem ea assumenda iure
+                  praesentium eveniet a. Est, velit error. Lorem, ipsum dolor
+                  sit amet consectetur adipisicing elit. Earum consectetur
+                  corrupti officia voluptatum asperiores? Sapiente, tempore
+                  doloremque omnis labore dolore voluptatem ea assumenda iure
+                  praesentium eveniet a. Est, velit error. Lorem, ipsum dolor
+                  sit amet consectetur adipisicing elit. Earum consectetur
+                  corrupti officia voluptatum asperiores? Sapiente, tempore
+                  doloremque omnis labore dolore voluptatem ea assumenda iure
+                  praesentium eveniet a. Est, velit error. Lorem, ipsum dolor
+                  sit amet consectetur adipisicing elit. Earum consectetur
+                  corrupti officia voluptatum asperiores? Sapiente, tempore
+                  doloremque omnis labore dolore voluptatem ea assumenda iure
+                  praesentium eveniet a. Est, velit error.
+                </p>
+              </div>
+              <img
+                src="/images/jelly-green-surprised-character-in-vr-glasses.png"
+                alt="image"
+              />
+            </div>
+            <div class="sketchfab-table">
+              <iframe
+                id="hubble-3d"
+                title="Hubble Space Telescope"
+                frameborder="0"
+                allowfullscreen
+                mozallowfullscreen="true"
+                webkitallowfullscreen="true"
+                allow="autoplay; fullscreen; xr-spatial-tracking"
+                xr-spatial-tracking
+                execution-while-out-of-viewport
+                execution-while-not-rendered
+                web-share
+                src="https://sketchfab.com/models/9f5caba03a0e4ec8a64484a0cc54cdaf/embed?autospin=1&autostart=1&camera=0"
+              >
+              </iframe>
+              <img
+                src="./images/bloom-virtual-reality-console.png"
+                alt="vr-console"
+              />
+              <img
+                class="table"
+                src="./images/juicy-table.png"
+                alt="display-table"
+              />
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
+    <footer>Created by Ralph Tungol</footer>
   </body>
 </html>

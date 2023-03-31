@@ -3,38 +3,138 @@
   padding: 0;
   box-sizing: border-box;
 }
+.gallery {
+  display: flex;
+  width: 100%;
+  height: 90vh;
+  overflow-x: scroll;
+  background: linear-gradient(to bottom, black 80%, white);
+}
+nav {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 
+}
+h1 {
+  color: white;
+  padding: 0 5vmin;
+  font-size: 2vmin;
+  text-align: center;
+}
+ul {
+  
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1;
+}
+li {
+  padding: 0 5vmin;
+  font-size: 2vmin;
+}
+li > a {
+  color: white;
+  text-decoration: none;
+}
 section {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
-  /* background: linear-gradient(to bottom, black, grey, black); */
-  background: black;
+  align-items: start;
+}
+.introduction {
+  background-color: aliceblue;
+  margin: 5vmin 5vmin;
+  padding: 2vmin 5vmin;
+  background-color: rgba(187, 187, 187, 0.762);
+  border-radius: 10px;
+  border: 3px solid white;
+}
+.introduction > p {
+  font-size: 0.8rem;
+  height: 70vh;
+  width: 500px;
+  overflow-y: scroll;
+  padding: 2vmin;
+}
+.introduction > p::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 10px;
+  background-color: white;
+}
+.introduction > p::-webkit-scrollbar-thumb {
+  background-color: rgb(74, 74, 74);
+  border-radius: 10px;
+}
+
+.introduction > h2 {
+  text-align: center;
+  /* padding: 5px 0; */
 }
 
 .sketchfab-embed-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+
   align-items: center;
-  width: 80%;
-  aspect-ratio: 1/1;
-  object-fit: contain;
+  justify-content: center;
   margin: 0 5vmin;
+}
+.sketchfab-embed-wrapper > img {
+  display: flex;
+}
+.sketchfab-contents {
+  display: flex;
+  flex-direction: row;
+}
+.sketchfab-table {
+  display: flex;
+  flex-direction: column;
+}
+.sketchfab-table > img {
+  width: 400px;
+
+  padding: 0 5vmin;
+}
+.table {
+  height: 80px;
 }
 
 #hubble-3d,
 #ISS-3d,
 #MER-3d {
-  width: 100%;
-  height: 100%;
-  max-width: 100%;
-  max-height: 100%;
+  width: 400px;
+  height: 400px;
+  margin-top: 5vmin;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  padding: 5vmin 5vmin;
 }
 
-.description { 
-  width: 100%;
-  height: 100px;
-  background-color: aliceblue;
+.description {
+  width: 250px;
+  height: 50vh;
+  background-color: rgba(187, 187, 187, 0.762);
+  border-radius: 10px;
+  border: 3px solid white;
+  margin: 5vmin 0;
+  overflow-y: scroll;
+  font-size: 0.8rem;
+  padding: 2vmin 2vmin;
+}
+.description::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 10px;
+  background-color: white;
+}
+.description::-webkit-scrollbar-thumb {
+  background-color: rgb(74, 74, 74);
+  border-radius: 10px;
+}
+
+footer {
+  /* margin-top: 5vmin; */
 }
