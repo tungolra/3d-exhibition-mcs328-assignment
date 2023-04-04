@@ -92,7 +92,6 @@ section {
 
 .introduction > h2 {
   text-align: center;
-  /* padding: 5px 0; */
 }
 
 .sketchfab-embed-wrapper {
@@ -144,7 +143,7 @@ section {
   box-shadow: inset 0px 0px 60px white;
   margin: 5vmin 0;
   overflow-y: scroll;
-  font-size: 0.8rem;
+  /* font-size: 0.8rem; */
   padding: 2vmin 2vmin;
 }
 .description::-webkit-scrollbar {
@@ -157,12 +156,23 @@ section {
   border-radius: 10px;
 }
 
-.description > p {
+.description > div {
   display: flex;
   flex-direction: column;
 }
-.description > p > span {
+.description > div > span {
   font-weight: bold;
+}
+
+.description > div > p {
+  text-indent: 1rem;
+  margin-bottom: 10px;
+}
+.description > h3 { 
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  text-decoration: underline;
+  text-align: center;
 }
 
 footer {
@@ -174,3 +184,4 @@ footer > span {
   display: flex;
   flex-direction: column;
 }
+
