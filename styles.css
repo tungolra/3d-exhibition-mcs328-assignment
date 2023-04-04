@@ -3,13 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-.gallery {
-  display: flex;
-  width: 100%;
-  height: 90vh;
-  overflow-x: scroll;
-  background: linear-gradient(to bottom, black 80%, white);
-}
+
 nav {
   background-color: black;
   position: fixed;
@@ -18,6 +12,35 @@ nav {
   width: 100%;
 
 }
+
+.gallery {
+  display: flex;
+  width: 100%;
+  height: 90vh;
+  overflow-x: scroll;
+  background: linear-gradient(to bottom, black 80%, white);
+}
+
+/* speaker element start */
+.audio-wrapper {
+  background-color: aliceblue;
+  width: 100px;
+  height: 100px;
+  color: aliceblue;
+  /* position: relative; */
+  /* display: inline-block; */
+}
+
+.speaker-image {
+  /* position: absolute; */
+  bottom: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+}
+/* speaker element end */
+
+
 h1 {
   color: white;
   padding: 0 5vmin;
@@ -52,14 +75,16 @@ section {
   background-color: rgba(187, 187, 187, 0.762);
   border-radius: 10px;
   border: 3px solid white;
-}
-.introduction > p {
-  font-size: 0.8rem;
   height: 70vh;
-  width: 500px;
+}
+
+.introduction > p {
+  height:60vh;
+  width: 400px;
   overflow-y: scroll;
   padding: 2vmin;
 }
+
 .introduction > p::-webkit-scrollbar {
   width: 8px;
   border-radius: 10px;
@@ -116,7 +141,7 @@ section {
 
 .description {
   width: 250px;
-  height: 50vh;
+  height: 45vh;
   background-color: rgba(187, 187, 187, 0.762);
   border-radius: 10px;
   border: 3px solid white;
@@ -135,6 +160,20 @@ section {
   border-radius: 10px;
 }
 
+.description > p { 
+  display: flex;
+  flex-direction: column;
+}
+.description > p >span{
+  font-weight: bold;
+
+} 
+
+
 footer {
   /* margin-top: 5vmin; */
+}
+footer > span { 
+  display: flex;
+  flex-direction: column;
 }
