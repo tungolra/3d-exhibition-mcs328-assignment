@@ -2,18 +2,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: monospace;
 }
 
 nav {
+  font-size: large;
   background-color: black;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-
 }
 
 .gallery {
+  margin-top: 5vmin;
   display: flex;
   width: 100%;
   height: 90vh;
@@ -21,34 +23,12 @@ nav {
   background: linear-gradient(to bottom, black 80%, white);
 }
 
-/* speaker element start */
-.audio-wrapper {
-  background-color: aliceblue;
-  width: 100px;
-  height: 100px;
-  color: aliceblue;
-  /* position: relative; */
-  /* display: inline-block; */
-}
-
-.speaker-image {
-  /* position: absolute; */
-  bottom: 0;
-  right: 0;
-  width: 50px;
-  height: 50px;
-}
-/* speaker element end */
-
-
 h1 {
   color: white;
   padding: 0 5vmin;
-  font-size: 2vmin;
   text-align: center;
 }
 ul {
-  
   display: flex;
   list-style: none;
   justify-content: space-around;
@@ -59,7 +39,15 @@ li {
   padding: 0 5vmin;
   font-size: 2vmin;
 }
+
+li > a:hover {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  cursor: pointer;
+}
 li > a {
+  padding: 4px;
   color: white;
   text-decoration: none;
 }
@@ -69,20 +57,27 @@ section {
   align-items: start;
 }
 .introduction {
-  background-color: aliceblue;
-  margin: 5vmin 5vmin;
-  padding: 2vmin 5vmin;
-  background-color: rgba(187, 187, 187, 0.762);
+  color: rgb(52, 88, 131);
+  background-color: rgba(121, 236, 251, 0.906);
   border-radius: 10px;
   border: 3px solid white;
+  box-shadow: inset 0px 0px 60px white;
+  margin: 5vmin 5vmin;
+  padding: 2vmin 5vmin;
   height: 70vh;
 }
 
-.introduction > p {
-  height:60vh;
+.introduction > div {
+  height: 60vh;
   width: 400px;
   overflow-y: scroll;
   padding: 2vmin;
+}
+.introduction > div > p {
+  text-indent: 2rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
 }
 
 .introduction > p::-webkit-scrollbar {
@@ -142,9 +137,11 @@ section {
 .description {
   width: 250px;
   height: 45vh;
-  background-color: rgba(187, 187, 187, 0.762);
+  color: rgb(52, 88, 131);
+  background-color: rgba(121, 236, 251, 0.906);
   border-radius: 10px;
   border: 3px solid white;
+  box-shadow: inset 0px 0px 60px white;
   margin: 5vmin 0;
   overflow-y: scroll;
   font-size: 0.8rem;
@@ -160,20 +157,20 @@ section {
   border-radius: 10px;
 }
 
-.description > p { 
+.description > p {
   display: flex;
   flex-direction: column;
 }
-.description > p >span{
+.description > p > span {
   font-weight: bold;
-
-} 
-
+}
 
 footer {
-  /* margin-top: 5vmin; */
+  color: rgb(52, 88, 131);
+  background-color: rgba(121, 236, 251, 0.906);
+  text-align: center;
 }
-footer > span { 
+footer > span {
   display: flex;
   flex-direction: column;
 }
